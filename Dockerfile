@@ -86,9 +86,6 @@ EXPOSE 8080 8443 10000
 
 WORKDIR ${NIFI_HOME}
 
-RUN chgrp -R 0 /opt/nifi/nifi-1.7.1 \
-  && chmod -R g+rwX /opt/nifi/nifi-1.7.1
-
 # Apply configuration and start NiFi
 #
 # We need to use the exec form to avoid running our command in a subshell and omitting signals,
