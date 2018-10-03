@@ -1,3 +1,3 @@
 FROM apache/nifi
-RUN chgrp -R 0 /some/directory \
-  && chmod -R g+rwX /some/directory
+RUN chgrp -R 0 /opt/nifi/ \
+  && chmod -R g+rwX /opt/nifi/
